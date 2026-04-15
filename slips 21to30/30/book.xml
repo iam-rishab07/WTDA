@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bookstore>
+    <Yoga>
+        <Title>Light on Yoga</Title>
+        <Author>B.K.S. Iyengar</Author>
+        <Price>20.99</Price>
+    </Yoga>
+    <Story>
+        <Title>The Alchemist</Title>
+        <Author>Paulo Coelho</Author>
+        <Price>12.99</Price>
+    </Story>
+    <Technical>
+        <Title>Python Handbook</Title>
+        <Author>Jake VanderPlas</Author>
+        <Price>28.99</Price>
+    </Technical>
+</Bookstore>

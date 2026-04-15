@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Details</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#emp-select').change(function() {
+                var ename = $(this).val();
+                $.ajax({
+                    url: 'empdetails.php',
+                    type: 'POST',
+                    data: { name: ename },
+                    success: function(response) {
+                        $('#details').html(response);
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <h3>Select Employee:</h3>
+    <select id="emp-select">
+        <option value="">--Select--</option>
+        <option value="Amit">Amit</option>
+        <option value="Sumit">Sumit</option>
+    </select>
+    <div id="details" style="margin-top:20px; border:1px solid #000; padding:10px;">
+        Details will appear here...
+    </div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<book isbn="978-0134685991" publisher="Pearson">
+    <title>Learning PHP, MySQL &amp; JavaScript</title>
+    <author>Robin Nixon</author>
+    <description>A step-by-step guide to creating dynamic websites.</description>
+</book>

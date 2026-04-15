@@ -1,0 +1,35 @@
+<!-- Q. 1) Create web Application that contains Voters details and check proper validation for
+(name, Age, and nationality), as Name should be in upper case letters only, Age should
+not be less than 18 yrs and Nationality should be Indian.(use HTML-AJAX-PHP). -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voter Validation</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function validateVoter() {
+            var vname = $("#name").val();
+            var vage = $("#age").val();
+            var vnat = $("#nat").val();
+
+            $.ajax({
+                url: 'voter.php',
+                type: 'POST',
+                data: {name: vname, age: vage, nationality: vnat},
+                success: function(response) {
+                    $("#result").html(response);
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <h2>Voter Registration</h2>
+    Name: <input type="text" id="name"> (Uppercase only)<br><br>
+    Age: <input type="number" id="age"><br><br>
+    Nationality: <input type="text" id="nat"><br><br>
+    <button onclick="validateVoter()">Check Eligibility</button>
+    <div id="result"></div>
+</body>
+</html>

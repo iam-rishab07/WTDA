@@ -1,0 +1,31 @@
+<html>
+<head>
+    <script>
+    function generateFib() {
+        let n = parseInt(document.getElementById("num").value);
+        let output = document.getElementById("result");
+        
+        let fib = [0, 1]; // Starting values
+        
+        if (isNaN(n) || n <= 0) {
+            output.innerHTML = "Please enter a valid positive number.";
+            return;
+        }
+
+        // Calculate sequence
+        for (let i = 2; i < n; i++) {
+            fib[i] = fib[i - 1] + fib[i - 2];
+        }
+
+        // Slice handles cases where n=1 or n=2
+        output.innerHTML = "Fibonacci sequence: " + fib.slice(0, n).join(", ");
+    }
+    </script>
+</head>
+<body>
+    <h3>Fibonacci Generator</h3>
+    Enter count: <input type="number" id="num">
+    <button onclick="generateFib()">Generate</button>
+    <p id="result"></p>
+</body>
+</html>

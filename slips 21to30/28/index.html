@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AJAX Login</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function checkLogin() {
+            var user = $("#user").val();
+            var pass = $("#pass").val();
+
+            $.ajax({
+                url: 'check_login.php',
+                type: 'POST',
+                data: {username: user, password: pass},
+                success: function(response) {
+                    if(response.trim() == "valid") {
+                        alert("Login Successful!");
+                    } else {
+                        alert("Invalid Username or Password");
+                    }
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    Username: <input type="text" id="user"><br>
+    Password: <input type="password" id="pass"><br>
+    <button onclick="checkLogin()">Login</button>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!-- Q. 1) Write a JavaScript function to validate username and password for a membership -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Membership Form</title>
+    <script>
+        function validateForm() {
+            // Access form fields using name attributes
+            // document.forms["formName"]["inputName"]
+            var user = document.forms["membershipForm"]["username"].value;
+            var pass = document.forms["membershipForm"]["password"].value;
+
+            // Check if username is empty
+            if (user == "") {
+                alert("Username must be filled out");
+                return false;
+            }
+            
+            // Check if password is empty
+            if (pass == "") {
+                alert("Password must be filled out");
+                return false;
+            }
+
+            // If both are filled, return true to allow form submission
+            alert("Validation Successful!");
+            return true;
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Membership Registration</h2>
+
+    <form name="membershipForm" action="s9.html" onsubmit="return validateForm()" method="post">
+        
+        <label>Username:</label>
+        <input type="text" name="username">
+        <br><br>
+
+        <label>Password:</label>
+        <input type="password" name="password">
+        <br><br>
+
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+</html>

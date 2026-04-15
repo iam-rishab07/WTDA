@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<List>
+    <MovieInfo>
+        <MovieNo>1</MovieNo>
+        <MovieTitle>The Shawshank Redemption</MovieTitle>
+        <ActorName>Tim Robbins</ActorName>
+        <ReReleaseYear>1994</ReReleaseYear>
+    </MovieInfo>
+    <MovieInfo>
+        <MovieNo>2</MovieNo>
+        <MovieTitle>The Godfather</MovieTitle>
+        <ActorName>Marlon Brando</ActorName>
+        <ReReleaseYear>1972</ReReleaseYear>
+    </MovieInfo>
+    <MovieInfo>
+        <MovieNo>3</MovieNo>
+        <MovieTitle>The Dark Knight</MovieTitle>
+        <ActorName>Christian Bale</ActorName>
+        <ReReleaseYear>2008</ReReleaseYear>
+    </MovieInfo>
+    <MovieInfo>
+        <MovieNo>4</MovieNo>
+        <MovieTitle>The Godfather: Part II</MovieTitle>
+        <ActorName>Al Pacino</ActorName>
+        <ReReleaseYear>1974</ReReleaseYear>
+    </MovieInfo>
+    <MovieInfo>
+        <MovieNo>5</MovieNo>
+        <MovieTitle>12 Angry Men</MovieTitle>
+        <ActorName>Henry Fonda</ActorName>
+        <ReReleaseYear>1957</ReReleaseYear>
+    </MovieInfo>
+</List> 

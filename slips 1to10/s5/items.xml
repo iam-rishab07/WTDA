@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Items>
+    <Item>
+        <item-name>Television</item-name>
+        <item-rate>500</item-rate>
+        <item-quantity>10</item-quantity>
+    </Item>
+    <Item>
+        <item-name>Shirt</item-name>
+        <item-rate>50</item-rate>
+        <item-quantity>20</item-quantity>
+    </Item>
+    <Item>
+        <item-name>Rice</item-name>
+        <item-rate>40</item-rate>
+        <item-quantity>30</item-quantity>
+    </Item>
+    <Item>
+        <item-name>Harry Potter Book</item-name>
+        <item-rate>20</item-rate>
+        <item-quantity>50</item-quantity>
+    </Item>
+    <Item>
+        <item-name>Football</item-name>
+        <item-rate>100</item-rate>
+        <item-quantity>5</item-quantity>
+    </Item>
+</Items>
